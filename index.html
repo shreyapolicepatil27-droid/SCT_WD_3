@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101820" />
+    <title>Signal Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="." aria-label="Signal Quiz home">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span>SIGNAL<span class="brand-muted">/</span>QUIZ</span>
+        </a>
+        <div class="topbar-note"><span class="live-dot"></span> 30 SECOND ROUNDS</div>
+      </header>
+
+      <section id="welcome-view" class="view welcome-view" aria-labelledby="welcome-title">
+        <div class="eyebrow">CURATED KNOWLEDGE CHECK · 30 SEC EACH</div>
+        <h1 id="welcome-title">Give your brain<br /><em>a warm-up.</em></h1>
+        <p class="intro">A quick mix of curious questions, quick choices, and one-word surprises. Play at your own pace.</p>
+        <div class="welcome-actions">
+          <button id="start-button" class="button button-primary" type="button">Start the quiz <span aria-hidden="true">→</span></button>
+          <div class="meta-stack"><strong data-total-questions>08</strong><span>questions</span></div>
+          <div class="meta-stack"><strong>30</strong><span>sec each</span></div>
+        </div>
+        <div class="topic-strip" aria-label="Quiz topics">
+          <span>SCIENCE</span><span>CULTURE</span><span>HISTORY</span><span>LANGUAGE</span>
+        </div>
+      </section>
+
+      <section id="quiz-view" class="view quiz-view" hidden aria-labelledby="question-title">
+        <div class="quiz-header">
+          <div>
+            <div class="eyebrow" id="question-counter">QUESTION 01 / 08</div>
+            <div class="progress-track" aria-label="Quiz progress"><span id="progress-bar"></span></div>
+          </div>
+          <div class="quiz-tools">
+            <div class="timer" id="timer" role="status" aria-live="polite">
+              <span class="timer-label">TIME LEFT</span>
+              <strong id="timer-value">30</strong>
+              <span class="timer-unit">SEC</span>
+            </div>
+            <div class="score-pill"><span id="score-label">SCORE</span><strong id="live-score">00</strong><span class="score-total">/ <span data-total-questions>08</span></span></div>
+          </div>
+        </div>
+        <div class="question-layout">
+          <aside class="question-index" aria-hidden="true">
+            <span class="index-label">ROUND</span>
+            <strong id="question-number">01</strong>
+            <span class="index-line"></span>
+            <span class="index-label" id="question-type">SINGLE</span>
+          </aside>
+          <div class="question-panel">
+            <div class="question-kicker" id="question-category">NATURAL WORLD</div>
+            <h2 id="question-title">Question goes here</h2>
+            <p id="question-hint" class="question-hint"></p>
+            <div id="answer-area" class="answer-area"></div>
+            <div class="question-footer">
+              <span id="selection-status" class="selection-status">Choose an answer to continue</span>
+              <button id="next-button" class="button button-primary" type="button" disabled>Next <span aria-hidden="true">→</span></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="result-view" class="view result-view" hidden aria-labelledby="result-title">
+        <div class="eyebrow">SESSION COMPLETE · YOUR SIGNAL IS IN</div>
+        <div class="result-heading">
+          <div><h1 id="result-title">Nice work,<br /><em id="result-message">curious mind.</em></h1></div>
+          <div class="score-orb"><strong id="final-score">00</strong><span>/ <span data-total-questions>08</span></span></div>
+        </div>
+        <div class="result-bar"><span id="result-bar-fill"></span></div>
+        <p id="result-summary" class="result-summary"></p>
+        <div class="scoreboard" aria-label="Quiz score breakdown">
+          <div class="score-stat"><strong id="attempted-score">00</strong><span>attempted</span></div>
+          <div class="score-stat score-stat-correct"><strong id="correct-score">00</strong><span>correct</span></div>
+          <div class="score-stat score-stat-wrong"><strong id="wrong-score">00</strong><span>wrong</span></div>
+        </div>
+        <div class="result-actions">
+          <button id="restart-button" class="button button-primary" type="button">Play again <span aria-hidden="true">↻</span></button>
+          <button id="home-button" class="button button-quiet" type="button">Back to intro</button>
+        </div>
+      </section>
+
+      <footer class="site-footer"><span>BUILD YOUR SIGNAL</span><span>© 2025</span></footer>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
