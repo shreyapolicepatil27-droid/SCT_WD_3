@@ -2,10 +2,6 @@
 
 An interactive multiple-choice quiz game focused on simple general knowledge about India.
 
-## Demo
-
-[Watch the quiz demo](./quiz-game-demo.mp4)
-
 ## Features
 
 - India-focused general knowledge questions
@@ -31,6 +27,5 @@ Then visit `http://localhost:8080`.
 ## Files
 
 - `index.html` - quiz page structure
-- `styles.css` - responsive visual design
-- `app.js` - questions, timer, interactions, and scoring
-- `quiz-game-demo.mp4` - recorded quiz demonstration
+- `style.css` - responsive visual design
+- `script.js` - questions, timer, interactions, and scoring
