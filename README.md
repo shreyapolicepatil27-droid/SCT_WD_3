@@ -1,4 +1,4 @@
-# India GK Quiz
+# Quiz game app
 
 An interactive multiple-choice quiz game focused on simple general knowledge about India.
 
