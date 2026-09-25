@@ -2,6 +2,10 @@
 
 An interactive multiple-choice quiz game focused on simple general knowledge about India.
 
+## Demo
+
+[Play the live quiz](https://shreyapolicepatil27-droid.github.io/SCT_WD_3/)
+
 ## Features
 
 - India-focused general knowledge questions
